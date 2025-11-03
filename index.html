@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator 😂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Random Joke Generator 😂</h1>
+
+        <div class="controls">
+            <select id="category">
+                <option value="Any">Any Joke</option>
+                <option value="Programming">Programming</option>
+                <option value="General">General</option>
+                <option value="Knock-knock">Knock-Knock</option>
+                <option value="Dad">Dad Joke</option>
+            </select>
+            <button onclick="getJoke()">New Joke!</button>
+        </div>
+
+        <div class="joke-card">
+            <div id="setup">Click "New Joke!" to laugh...</div>
+            <div id="punchline"></div>
+        </div>
+
+        <div class="actions">
+            <button id="revealBtn" onclick="revealPunchline()" style="display:none;">Reveal Punchline</button>
+            <button onclick="copyJoke()">Copy Joke</button>
+        </div>
+    </div>
+
+    <!-- JS will go here - tu khud add kar -->
+    <script src="script.js">
+        
+        // Placeholder for your JS
+        // Use IDs: category, setup, punchline, revealBtn
+        // API: https://v2.jokeapi.dev/joke/{category}?blacklistFlags=nsfw,religious,racist,sexist,explicit
+        // Example fetch in getJoke(), revealPunchline(), copyJoke()
+    </script>
+</body>
+
+</html>
