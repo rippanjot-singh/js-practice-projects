@@ -4,23 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Joke Generator 😂</title>
+    <title>Random Joke Generator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./media/img/favicon-laugh.png" type="image/x-icon">
 </head>
 
 <body>
     <div class="container">
-        <h1>Random Joke Generator 😂</h1>
+        <h1>Random Joke Generator</h1>
 
         <div class="controls">
             <select id="category">
-                <option value="Any">Any Joke</option>
-                <option value="Programming">Programming</option>
-                <option value="General">General</option>
-                <option value="Knock-knock">Knock-Knock</option>
-                <option value="Dad">Dad Joke</option>
+                <option value="random">Any Joke</option>
+                <option value="programming">Programming</option>
+                <option value="general">General</option>
+                <option value="knock-knock">Knock-Knock</option>
+                <option value="dad">Dad Joke</option>
             </select>
-            <button onclick="getJoke()">New Joke!</button>
+            <button class="get-joke">New Joke!</button>
         </div>
 
         <div class="joke-card">
