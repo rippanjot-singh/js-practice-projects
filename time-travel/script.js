@@ -17,7 +17,7 @@ function call() {
 
 btn.addEventListener('click', () => {
     p.style.display = 'block';
-    let calls = ['Calling API', 'Call Rejected', 'Calling NASA', 'Call Rejected', 'NASA KI MA KA BHOSDA', 'Data Fetched'];
+    let calls = ['Calling API', 'Call Rejected', 'Calling NASA', 'Call Rejected', 'NASA Gai ***', 'Data Fetched'];
 
     btn.style.display = 'none';
     fields.forEach((field) => {
