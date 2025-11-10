@@ -1,0 +1,103 @@
+$bg: #161616; // charcoal background
+$panel: #1f1f1f; // slightly lighter panel
+$text: #eaeaea; // main text
+$muted: #999999; // secondary text
+$accent: #6db193; // mint accent
+$line: #2a2a2a;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $bg;
+    color: $text;
+    font-family: "Manrope", sans-serif;
+}
+
+.time-console {
+    background: $panel;
+    border: 1px solid $line;
+    border-radius: 12px;
+    padding: 40px;
+    width: min(90%, 400px);
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+    h1 {
+        font-size: 1.4rem;
+        margin-bottom: 24px;
+        letter-spacing: 0.5px;
+    }
+
+    p {
+        display: none;
+        font-size: 0.9rem;
+        color: $muted;
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+    video {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .field {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+
+        label {
+            font-size: 0.9rem;
+            color: $muted;
+            margin-bottom: 6px;
+        }
+
+        input {
+            width: 100%;
+            background: $bg;
+            border: 1px solid $line;
+            border-radius: 8px;
+            color: $text;
+            padding: 10px;
+            font-size: 1rem;
+            outline: none;
+
+            &:focus {
+                border-color: $accent;
+                box-shadow: 0 0 0 2px rgba(109, 177, 147, 0.25);
+            }
+        }
+    }
+
+    .btn {
+        background: $accent;
+        color: #0b0b0b;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 0;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.2s ease;
+
+        &:hover {
+            background: lighten($accent, 5%);
+        }
+    }
+}
