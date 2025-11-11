@@ -14,7 +14,7 @@ function setdate() {
 setdate();
 
 btn.addEventListener('click', () => {
-    if (future.value > '2025-12-31' && future.value != '') {
+    if (future.value >= '2025-12-31' && future.value != '') {
         console.log('hello', future.value);
         p.style.display = 'block';
         let calls = ['Calling API', 'Call Rejected', 'Calling NASA', 'Call Rejected', 'NASA Khaye Tatti', 'Data Fetched'];
