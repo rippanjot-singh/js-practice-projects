@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 360px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.144);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+        .parent {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            .input {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+
+            input {
+                border: 2px solid rgb(196, 196, 196);
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.1);
+                color: #fff;
+                font-size: 16px;
+
+                &::placeholder {
+                    color: #b3b3b3;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            select {
+                border: 2px solid rgb(196, 196, 196);
+                width: fit-content;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.1);
+                color: #fff;
+                font-size: 16px;
+
+                option{
+                    color: #272121;
+                }
+            }
+        }
+    }
+}
