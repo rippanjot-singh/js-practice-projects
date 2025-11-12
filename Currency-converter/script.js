@@ -7,7 +7,6 @@ let first = document.querySelector('.first-currncy');
 let second = document.querySelector('.second-currncy');
 let select = document.querySelectorAll('select');
 let inp = document.querySelectorAll('input');
-
 let cr = {};
 
 //API
