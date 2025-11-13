@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="searchbar">
+                <form action="">
+                <input type="text" placeholder="search">
+                <button type="submit" class="searchbtn">
+                    <p>Search</p>
+                    <i class="ri-search-line search-icon"></i>
+                </button>
+                </form>
+            </div>
+        </nav>
+        <section>
+            <div class="card">
+                <div class="title">
+                    <h1>Check weather Of</h1>
+                    <div>
+                        <p class="location">Your Location</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="temp data">
+                        <h1>30°C</h1>
+                        <p>Temprature</p>
+                    </div>
+                    <div class="seperator"></div>
+                    <div class="windspeed data">
+                        <h1>20 km/h</h1>
+                        <p>Wind Speed</p>
+                    </div>
+                    <div class="seperator"></div>
+                    <div class="winddirection data">
+                        <h1>270°</h1>
+                        <p>Wind Direction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

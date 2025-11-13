@@ -75,7 +75,7 @@ function restartfnc(){
         cell.innerHTML = "";
         h1.innerHTML = "Tic Tac Toe";
         sm.innerHTML = "X's Turn";
-        gameOver = false;
+        gameOver = false; 
     })
 }
 
