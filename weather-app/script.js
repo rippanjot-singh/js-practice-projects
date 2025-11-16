@@ -37,19 +37,19 @@ async function getData() {
     }
 }
 
-//EVENT LISTENERS
+//custom cursor
+function customcursor(){
+    document.addEventListener('mousemove', (e) => {
+        customCursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    });
+    
+    document.addEventListener('mousedown', () => {
+        customCursor.style.backgroundColor = 'rgb(83, 155, 80)';
+    });
+    
+    document.addEventListener('mouseup', () => {
+        customCursor.style.backgroundColor = 'rgb(32, 58, 31)';
+    });
+}
 
-
-document.addEventListener('mousemove', (e) => {
-  // Update the custom cursor's position to follow the mouse
-  customCursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-});
-
-// Optional: Add interactive effects on hover or click
-document.addEventListener('mousedown', () => {
-  customCursor.style.backgroundColor = 'rgb(83, 155, 80)'; // Example: Change color on click
-});
-
-document.addEventListener('mouseup', () => {
-  customCursor.style.backgroundColor = 'rgb(32, 58, 31)'; // Example: Revert color on release
-});
+customcursor();
