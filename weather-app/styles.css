@@ -44,6 +44,10 @@ main nav {
 }
 main nav .searchbar {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 main nav .searchbar form {
   margin: 10px 30px;
