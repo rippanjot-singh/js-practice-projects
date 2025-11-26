@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main h1 {
+  color: white;
+}
+main .score-div {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+main .score-div h2 {
+  font-size: 1.5rem;
+}
+main .two {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .game {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+main .game .box {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main button {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
