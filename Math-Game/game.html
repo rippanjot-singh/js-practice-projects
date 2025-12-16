@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <style>
+
+        #problem{
+            animation: move 15s linear forwards;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateY(0px);
+            }
+
+            100% {
+                transform: translateY(80vh);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="flex flex-col h-screen justify-between">
+        <header class="h-[8vh] bg-gray-900 text-white flex items-center justify-between pl-10 pr-10">
+            <h1 class="text-2xl font-bold">Math Game</h1>
+            <div>
+                <i class="heart ri-heart-fill text-red-500"></i>
+                <i class="heart ri-heart-fill text-red-500"></i>
+                <i class="heart ri-heart-fill text-red-500"></i>
+            </div>
+            <div class="flex gap-5">
+                <h3 id="score">Score: 0</h3>
+                <h3 id="highScore">High Score: 0</h3>
+            </div>
+        </header>
+        <section id="question" class="h-[72vh] overflow-y-hidden relative flex">
+        </section>
+        <section id="water" class="water flex flex-col items-center justify-center h-[20vh]  bg-blue-400 border-t-2 border-gray-900 text-white">
+            <form action="" autocomplete="off" class="flex flex-col">
+                <input type="text" id="answer" placeholder="Answer" autofocus>
+                <button id="submit" class="text-transparent">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

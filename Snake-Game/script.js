@@ -91,18 +91,11 @@ function move() {
     for (let i = 1; i < snake.length; i++) {
         const l = 20 + (i * 1.5);
         boxes[snake[i]].style.backgroundColor = `hsla(120, 100%, ${l}%, 1.00)`;
-        // boxes[snake[i]].style.borderRadius = '10px';
-        // boxes[snake[i]].style.border = '1px solid black';
-        // boxes[snake[i]].innerText = '🐍';
     }
 
     boxes[snake[0]].style.backgroundColor = 'darkgreen';
     boxes[snake[0]].innerHTML = `<img src="./public/img/amitab bachan.png" width="100%" alt="">`;
     boxes[snake[0]].style.fontSize = '2rem';
-    // newHead.style.borderTopLeftRadius = "10px";
-    // if (direction === 1){
-
-    // }
 }
 
 
@@ -143,11 +136,9 @@ function control(e) {
     else if (e.key === 'ArrowLeft' && direction !== 1) direction = -1;
     else if (e.key === 'ArrowRight' && direction !== -1) direction = 1;
 }
-
 button.addEventListener('click', () => window.location.reload());
 
 // R to restart
-
 function restartfnc() {
     document.addEventListener('keydown', (e) => {
         if (gameOver) window.location.reload();
@@ -156,7 +147,6 @@ function restartfnc() {
 
 // space to start
 startCount = 0;
-
 document.addEventListener('keydown', (e) => {
     if (startCount === 0) {
         startGame();
