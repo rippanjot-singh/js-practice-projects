@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main class="w-screen h-screen">
+        <header class="h-[8vh] w-full bg-gray-900 text-white flex items-center justify-center pl-10 pr-10">
+            <h1 class="text-2xl font-bold">Lorem Ipsum Generator</h1>
+        </header>
+        <section id="controls" class="h-[10vh] w-full flex items-center justify-center">
+            <input type="number" id="wordCount" placeholder="Word Count" class="border-2 rounded m-2">
+        </section>
+        <section id="output" class="h-[80vh] w-full flex flex-col items-center justify-end p-10">
+            <button id="copy" class="bg-gray-900 text-white p-2 rounded m-2 cursor-pointer">Copy</button>
+            <div id="text" class="border-2 rounded w-full h-full overflow-y-scroll">
+                <p id="textp"></p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
