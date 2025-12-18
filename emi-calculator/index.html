@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main class="flex flex-col h-screen">
+        <header class="flex items-center justify-center h-[8vh] bg-gradient-to-r from-[#188D75] to-[#28C29B]">
+            <h1 class="text-white text-2xl font-bold">EMI Calculator</h1>
+        </header>
+        <section class="flex flex-col lg:flex-row h-full w-screen gap-5 p-5">
+            <div class="border-1 w-full h-full p-5">
+                <h1 class="text-2xl font-bold">Input</h1><br>
+                <form action="" class="flex flex-col gap-2">
+                    <input id="amount" type="number" required class="lg:w-1/2 w-full border-1 p-2 rounded" placeholder="Ammount*">
+                    <input id="down-payment" type="number" class="lg:w-1/2 w-full border-1 p-2 rounded" placeholder="Down Payment %">
+                    <div class="gap-2 sm:gap-5 lg:w-1/2 w-full flex items-center justify-between">
+                    <input id="rate" type="number" class="lg:w-2/3 w-full border-1 p-2 rounded" placeholder="Rate" step="any"> / <select id="rate-type" name="" id="">
+                        <option disabled selected value="">Select</option>
+                        <option value="Month">Monthly</option>
+                        <option value="Year">Yearly</option>
+                    </select>
+                    </div>
+                    <div class=" w-full flex items-center justify-between lg:w-1/2">
+                        <input id="time" type="number" step="any" required class="w-3/4 border-1 p-2 rounded" placeholder="Time*">
+                        <select id="time-type" name="" id="" required>
+                            <option disabled selected value="">Select</option>
+                            <option value="Month">Month</option>
+                            <option value="Year">Year</option>
+                        </select>
+                    </div>
+                    <button id="calculate" type="submit" class="lg:w-1/2 w-full bg-gradient-to-r from-[#188D75] to-[#28C29B] text-white p-2 rounded cursor-pointer">Calculate</button>
+                </form>
+            </div>
+            <div id="answer" class="border-1 w-full h-full p-5">
+                <h1 class="text-2xl font-bold">Answer</h1>
+            </div>
+        </section>
+        <footer class="flex items-center justify-center h-[8vh] bg-gradient-to-r from-[#188D75] to-[#28C29B]">
+            <p class="text-white">© 2025 EMI Calculator by <a class="underline hover:text-blue-100" href="https://ziricstudios.in" target="_blank">Ziric Studios</a>. All rights reserved.</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
